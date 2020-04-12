@@ -4,30 +4,35 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+{% load static %}
+
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Resale a Business Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap-select.css">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<title>Resale a Business Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap-select.css' %}">
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" />
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <!--fonts-->
 <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!--//fonts-->	
+<!--//fonts-->
 <!-- js -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
 <!-- js -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-select.js"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-select.js' %}"></script>
 <script>
   $(document).ready(function () {
     var mySelect = $('#first-disabled2');
@@ -48,17 +53,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     });
   });
 </script>
-<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-<link href="css/jquery.uls.css" rel="stylesheet"/>
-<link href="css/jquery.uls.grid.css" rel="stylesheet"/>
-<link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+<script type="text/javascript" src="{% static 'js/jquery.leanModal.min.js' %}"></script>
+<link href="{% static 'css/jquery.uls.css' %}" rel="stylesheet"/>
+<link href="{% static 'css/jquery.uls.grid.css' %}" rel="stylesheet"/>
+<link href="{% static 'css/jquery.uls.lcd.css' %}" rel="stylesheet"/>
 <!-- Source -->
-<script src="js/jquery.uls.data.js"></script>
-<script src="js/jquery.uls.data.utils.js"></script>
-<script src="js/jquery.uls.lcd.js"></script>
-<script src="js/jquery.uls.languagefilter.js"></script>
-<script src="js/jquery.uls.regionfilter.js"></script>
-<script src="js/jquery.uls.core.js"></script>
+<script src="{% static 'js/jquery.uls.data.js' %}"></script>
+<script src="{% static 'js/jquery.uls.data.utils.js' %}"></script>
+<script src="{% static 'js/jquery.uls.lcd.js' %}"></script>
+<script src="{% static 'js/jquery.uls.languagefilter.js' %}"></script>
+<script src="{% static 'js/jquery.uls.regionfilter.js' %}"></script>
+<script src="{% static 'js/jquery.uls.core.js' %}"></script>
 <script>
 			$( document ).ready( function() {
 				$( '.uls-trigger' ).uls( {
@@ -70,10 +75,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				} );
 			} );
 		</script>
-		<link rel="stylesheet" href="css/flexslider.css" media="screen" />
 </head>
 <body>
-<div class="header">
+	<div class="header">
 		<div class="container">
 			<div class="logo">
 				<a href="index.html"><span>Re</span>sale</a>
@@ -213,140 +217,140 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<option>Fort Wayne</option>
 														<option>Evansville</option>
 														<option>South Bend</option>
-														<option>Hammond</option>														       
+														<option>Hammond</option>
 													</optgroup>
 													<optgroup label="Iowa">
 														<option>Des Moines</option>
 														<option>Cedar Rapids</option>
 														<option>Davenport</option>
 														<option>Sioux City</option>
-														<option>Waterloo</option>       													
+														<option>Waterloo</option>
 													</optgroup>
 													<optgroup label="Kansas">
 														<option>Wichita</option>
 														<option>Overland Park</option>
 														<option>Kansas City</option>
 														<option>Topeka</option>
-														<option>Olathe  </option>            													
+														<option>Olathe  </option>
 													</optgroup>
 													<optgroup label="Kentucky">
 														<option>Louisville</option>
 														<option>Lexington</option>
 														<option>Bowling Green</option>
 														<option>Owensboro</option>
-														<option>Covington</option>        														
+														<option>Covington</option>
 													</optgroup>
 													<optgroup label="Louisiana">
 														<option>New Orleans</option>
 														<option>Baton Rouge</option>
 														<option>Shreveport</option>
 														<option>Metairie</option>
-														<option>Lafayette</option>          														
+														<option>Lafayette</option>
 													</optgroup>
 													<optgroup label="Maine">
 														<option>Portland</option>
 														<option>Lewiston</option>
 														<option>Bangor</option>
 														<option>South Portland</option>
-														<option>Auburn</option>         														
+														<option>Auburn</option>
 													</optgroup>
 													<optgroup label="Maryland">
 														<option>Baltimore</option>
 														<option>Frederick</option>
 														<option>Rockville</option>
 														<option>Gaithersburg</option>
-														<option>Bowie</option>         														
+														<option>Bowie</option>
 													</optgroup>
 													<optgroup label="Massachusetts">
 														<option>Boston</option>
 														<option>Worcester</option>
 														<option>Springfield</option>
 														<option>Lowell</option>
-														<option>Cambridge</option>  
+														<option>Cambridge</option>
 													</optgroup>
 													<optgroup label="Michigan">
 														<option>Detroit</option>
 														<option>Grand Rapids</option>
 														<option>Warren</option>
 														<option>Sterling Heights</option>
-														<option>Lansing</option> 
+														<option>Lansing</option>
 													</optgroup>
 													<optgroup label="Minnesota">
 														<option>Minneapolis</option>
 														<option>St. Paul</option>
 														<option>Rochester</option>
 														<option>Duluth</option>
-														<option>Bloomington</option>      														
+														<option>Bloomington</option>
 													</optgroup>
 													<optgroup label="Mississippi">
 														<option>Jackson</option>
 														<option>Gulfport</option>
 														<option>Southaven</option>
 														<option>Hattiesburg</option>
-														<option>Biloxi</option>         														
+														<option>Biloxi</option>
 													</optgroup>
 													<optgroup label="Missouri">
 														<option>Kansas City</option>
 														<option>St. Louis</option>
 														<option>Springfield</option>
 														<option>Independence</option>
-														<option>Columbia</option>            														
+														<option>Columbia</option>
 													</optgroup>
 													<optgroup label="Montana">
 														<option>Billings</option>
 														<option>Missoula</option>
 														<option>Great Falls</option>
 														<option>Bozeman</option>
-														<option>Butte-Silver Bow</option>         														
+														<option>Butte-Silver Bow</option>
 													</optgroup>
 													<optgroup label="Nebraska">
 														<option>Omaha</option>
 														<option>Lincoln</option>
 														<option>Bellevue</option>
 														<option>Grand Island</option>
-														<option>Kearney</option>        													
+														<option>Kearney</option>
 													</optgroup>
 													<optgroup label="Nevada">
 														<option>Las Vegas</option>
 														<option>Henderson</option>
 														<option>North Las Vegas</option>
 														<option>Reno</option>
-														<option>Sunrise Manor</option>            													
+														<option>Sunrise Manor</option>
 													</optgroup>
 													<optgroup label="New Hampshire">
 														<option>Manchesters</option>
 														<option>Nashua</option>
 														<option>Concord</option>
 														<option>Dover</option>
-														<option>Rochester</option>              													
+														<option>Rochester</option>
 													</optgroup>
 													<optgroup label="New Jersey">
 														<option>Newark</option>
 														<option>Jersey City</option>
 														<option>Paterson</option>
 														<option>Elizabeth</option>
-														<option>Edison</option> 
+														<option>Edison</option>
 													</optgroup>
 													<optgroup label="New Mexico">
 														<option>Albuquerque</option>
 														<option>Las Cruces</option>
 														<option>Rio Rancho</option>
 														<option>Santa Fe</option>
-														<option>Roswell</option>       
+														<option>Roswell</option>
 													</optgroup>
 													<optgroup label="New York">
 														<option>New York</option>
 														<option>Buffalo</option>
 														<option>Rochester</option>
 														<option>Yonkers</option>
-														<option>Syracuse</option>        														
+														<option>Syracuse</option>
 													</optgroup>
 													<optgroup label="North Carolina">
 														<option>Charlotte</option>
 														<option>Raleigh</option>
 														<option>Greensboro</option>
 														<option>Winston-Salem</option>
-														<option>Durham</option>          														
+														<option>Durham</option>
 													</optgroup>
 													<optgroup label="North Dakota">
 														<option>Fargo</option>
@@ -360,99 +364,99 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<option>Cleveland</option>
 														<option>Cincinnati</option>
 														<option>Toledo</option>
-														<option>Akron</option>      
+														<option>Akron</option>
 													</optgroup>
 													<optgroup label="Oklahoma">
 														<option>Oklahoma City</option>
 														<option>Tulsa</option>
 														<option>Norman</option>
 														<option>Broken Arrow</option>
-														<option>Lawton</option>        														
+														<option>Lawton</option>
 													</optgroup>
 													<optgroup label="Oregon">
 														<option>Portland</option>
 														<option>Eugene</option>
 														<option>Salem</option>
 														<option>Gresham</option>
-														<option>Hillsboro</option>          														
+														<option>Hillsboro</option>
 													</optgroup>
 													<optgroup label="Pennsylvania">
 														<option>Philadelphia</option>
 														<option>Pittsburgh</option>
 														<option>Allentown</option>
 														<option>Erie</option>
-														<option>Reading</option>         														
+														<option>Reading</option>
 													</optgroup>
 													<optgroup label="Rhode Island">
 														<option>Providence</option>
 														<option>Warwick</option>
 														<option>Cranston</option>
 														<option>Pawtucket</option>
-														<option>East Providence</option>   
+														<option>East Providence</option>
 													</optgroup>
 													<optgroup label="South Carolina">
 														<option>Columbia</option>
 														<option>Charleston</option>
 														<option>North Charleston</option>
 														<option>Mount Pleasant</option>
-														<option>Rock Hill</option> 
+														<option>Rock Hill</option>
 													</optgroup>
 													<optgroup label="South Dakota">
 														<option>Sioux Falls</option>
 														<option>Rapid City</option>
 														<option>Aberdeen</option>
 														<option>Brookings</option>
-														<option>Watertown</option> 
+														<option>Watertown</option>
 													</optgroup>
 													<optgroup label="Tennessee">
 														<option>Memphis</option>
 														<option>Nashville</option>
 														<option>Knoxville</option>
 														<option>Chattanooga</option>
-														<option>Clarksville</option>       
+														<option>Clarksville</option>
 													</optgroup>
 													<optgroup label="Texas">
 														<option>Houston</option>
 														<option>San Antonio</option>
 														<option>Dallas</option>
 														<option>Austin</option>
-														<option>Fort Worth</option>   
+														<option>Fort Worth</option>
 													</optgroup>
 													<optgroup label="Utah">
 														<option>Salt Lake City</option>
 														<option>West Valley City</option>
 														<option>Provo</option>
 														<option>West Jordan</option>
-														<option>Orem</option>   
-													</optgroup>	
+														<option>Orem</option>
+													</optgroup>
 													<optgroup label="Vermont">
 														<option>Burlington</option>
 														<option>Essex</option>
 														<option>South Burlington</option>
 														<option>Colchester</option>
-														<option>Rutland</option>   
+														<option>Rutland</option>
 													</optgroup>
 													<optgroup label="Virginia">
 														<option>Virginia Beach</option>
 														<option>Norfolk</option>
 														<option>Chesapeake</option>
 														<option>Arlington</option>
-														<option>Richmond</option> 
-													</optgroup>	
+														<option>Richmond</option>
+													</optgroup>
 													<optgroup label="Washington">
 														<option>Seattle</option>
 														<option>Spokane</option>
 														<option>Tacoma</option>
 														<option>Vancouver</option>
-														<option>Bellevue</option> 
-													</optgroup>	
+														<option>Bellevue</option>
+													</optgroup>
 													<optgroup label="West Virginia">
 														<option>Charleston</option>
 														<option>Huntington</option>
 														<option>Parkersburg</option>
 														<option>Morgantown</option>
-														<option>Wheeling</option> 
-													</optgroup>	
+														<option>Wheeling</option>
+													</optgroup>
 													<optgroup label="Wisconsin">
 														<option>Milwaukee</option>
 														<option>Madison</option>
@@ -466,11 +470,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<option>Laramie</option>
 														<option>Gillette</option>
 														<option>Rock Springs</option>
-													</optgroup>			
+													</optgroup>
 												</optgroup>
 											</select>
 										</div>
-									  </form>    
+									  </form>
 								</div>
 							</div>
 						</div>
@@ -482,104 +486,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		</div>
 	</div>
-	<div class="banner text-center">
-	  <div class="container">    
+	<div class="main-banner banner text-center">
+	  <div class="container">
 			<h1>Sell or Advertise   <span class="segment-heading">    anything online </span> with Resale</h1>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
 			<a href="post-ad.html">Post Free Ad</a>
 	  </div>
 	</div>
-	<!--single-page-->
-	<div class="single-page main-grid-border">
-		<div class="container">
-			<ol class="breadcrumb" style="margin-bottom: 5px;">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="all-classifieds.html">All Ads</a></li>
-				<li class="active"><a href="mobiles.html">Mobiles</a></li>
-				<li class="active">Mobile Phone</li>
-			</ol>
-			<div class="product-desc">
-				<div class="col-md-7 product-view">
-					<h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
-					<p> <i class="glyphicon glyphicon-map-marker"></i><a href="#">state</a>, <a href="#">city</a>| Added at 06:55 pm, Ad ID: 987654321</p>
-					<div class="flexslider">
-						<ul class="slides">
-							<li data-thumb="images/ss1.jpg">
-								<img src="images/ss1.jpg" />
-							</li>
-							<li data-thumb="images/ss2.jpg">
-								<img src="images/ss2.jpg" />
-							</li>
-							<li data-thumb="images/ss3.jpg">
-								<img src="images/ss3.jpg" />
-							</li>
-						</ul>
-					</div>
-					<!-- FlexSlider -->
-					  <script defer src="js/jquery.flexslider.js"></script>
-					<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+		<!-- content-starts-here -->
+    {% block body %}
 
-						<script>
-					// Can also be used with $(document).ready()
-					$(window).load(function() {
-					  $('.flexslider').flexslider({
-						animation: "slide",
-						controlNav: "thumbnails"
-					  });
-					});
-					</script>
-					<!-- //FlexSlider -->
-					<div class="product-details">
-						<h4>Brand : <a href="#">Company name</a></h4>
-						<h4>Views : <strong>150</strong></h4>
-						<p><strong>Display </strong>: 1.5 inch HD LCD Touch Screen</p>
-						<p><strong>Summary</strong> : It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-					
-					</div>
-				</div>
-				<div class="col-md-5 product-details-grid">
-					<div class="item-price">
-						<div class="product-price">
-							<p class="p-price">Price</p>
-							<h3 class="rate">$ 259</h3>
-							<div class="clearfix"></div>
-						</div>
-						<div class="condition">
-							<p class="p-price">Condition</p>
-							<h4>Good</h4>
-							<div class="clearfix"></div>
-						</div>
-						<div class="itemtype">
-							<p class="p-price">Item Type</p>
-							<h4>Phones</h4>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-					<div class="interested text-center">
-						<h4>Interested in this Ad?<small> Contact the Seller!</small></h4>
-						<p><i class="glyphicon glyphicon-earphone"></i>00-85-9875462655</p>
-					</div>
-						<div class="tips">
-						<h4>Safety Tips for Buyers</h4>
-							<ol>
-								<li><a href="#">Contrary to popular belief.</a></li>
-								<li><a href="#">Contrary to popular belief.</a></li>
-								<li><a href="#">Contrary to popular belief.</a></li>
-								<li><a href="#">Contrary to popular belief.</a></li>
-								<li><a href="#">Contrary to popular belief.</a></li>
-								<li><a href="#">Contrary to popular belief.</a></li>
-								<li><a href="#">Contrary to popular belief.</a></li>
-								<li><a href="#">Contrary to popular belief.</a></li>
-								<li><a href="#">Contrary to popular belief.</a></li>
-							</ol>
-						</div>
-				</div>
-			<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-	<!--//single-page-->
-	<!--footer section start-->		
+    {% endblock body %}
+		<!--footer section start-->
 		<footer>
 			<div class="footer-top">
 				<div class="container">
@@ -592,7 +510,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-3 footer-grid">
 							<h4 class="footer-head">Help</h4>
 							<ul>
-								<li><a href="howitworks.html">How it Works</a></li>						
+								<li><a href="howitworks.html">How it Works</a></li>
 								<li><a href="sitemap.html">Sitemap</a></li>
 								<li><a href="faq.html">Faq</a></li>
 								<li><a href="feedback.html">Feedback</a></li>
@@ -603,10 +521,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col-md-3 footer-grid">
 							<h4 class="footer-head">Information</h4>
 							<ul>
-								<li><a href="regions.html">Locations Map</a></li>	
+								<li><a href="regions.html">Locations Map</a></li>
 								<li><a href="terms.html">Terms of Use</a></li>
-								<li><a href="popular-search.html">Popular searches</a></li>	
-								<li><a href="privacy.html">Privacy Policy</a></li>	
+								<li><a href="popular-search.html">Popular searches</a></li>
+								<li><a href="privacy.html">Privacy Policy</a></li>
 							</ul>
 						</div>
 						<div class="col-md-3 footer-grid">
@@ -617,23 +535,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<li><span class="glyphicon glyphicon-map-marker"></span></li>
 									<li>CENTER FOR FINANCIAL ASSISTANCE TO DEPOSED NIGERIAN ROYALTY</li>
 									<div class="clearfix"></div>
-								</ul>	
+								</ul>
 								<ul class="location">
 									<li><span class="glyphicon glyphicon-earphone"></span></li>
 									<li>+0 561 111 235</li>
 									<div class="clearfix"></div>
-								</ul>	
+								</ul>
 								<ul class="location">
 									<li><span class="glyphicon glyphicon-envelope"></span></li>
 									<li><a href="mailto:info@example.com">mail@example.com</a></li>
 									<div class="clearfix"></div>
-								</ul>						
+								</ul>
 							</address>
 						</div>
 						<div class="clearfix"></div>
-					</div>						
-				</div>	
-			</div>	
+					</div>
+				</div>
+			</div>
 			<div class="footer-bottom text-center">
 			<div class="container">
 				<div class="footer-logo">
