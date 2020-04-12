@@ -19,6 +19,7 @@ class Product(models.Model): # contain all the products informations
     category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True)
     brand = models.ForeignKey('Brand', on_delete=models.SET_NULL, null=True)
     price = models.DecimalField(max_digits=10, decimal_places=5)
+    image = models.ImageField(upload_to='main_product/', blank=True, null=True)
     created = models.DateTimeField(default=timezone.now)
 
     slug = models.SlugField(blank=True, null=True)

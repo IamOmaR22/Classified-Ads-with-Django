@@ -499,16 +499,16 @@
 							<ul class="list">
 
                 {% for product in product_list %}
-  								<a href="single.html">
+  								<a href="{% url 'product_detail' product.slug %}">
   									<li>
-  									<img src="images/m1.jpg" title="" alt="" />
+  									<img src="{{ product.image.url }}" title="" alt="" />
   									<section class="list-left">
   									<h5 class="title">{{ product.name }}</h5>
   									<span class="adprice">{{ product.price }}</span>
   									<p class="catpath">Mobile Phones » {{ product.brand }}</p>
   									</section>
   									<section class="list-right">
-  									<span class="date">Today, 17:55</span>
+  									<span class="date">Date, {{ product.created }}</span>
   									<span class="cityname">City name</span>
   									</section>
   									<div class="clearfix"></div>
