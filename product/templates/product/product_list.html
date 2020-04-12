@@ -1,5 +1,5 @@
 <h1>Our Products</h1>
 
-{% for i in product_list %}
-<h1>{{i}}</h1>
+{% for product in product_list %}
+<h1><a href="{% url 'product_detail' product.slug %}">{{ product }}</a></h1>
 {% endfor %}
