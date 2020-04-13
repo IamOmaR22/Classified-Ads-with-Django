@@ -18,7 +18,7 @@ def productlist(request, category_slug=None):
     page = request.GET.get('page')
     productlist = paginator.get_page(page)
 
-    context = {'product_list': productlist, 'category_list':categorylist}
+    context = {'product_list': productlist, 'category_list':categorylist, 'category':category}
 
     return render(request, 'product/product_list.html', context)
 
