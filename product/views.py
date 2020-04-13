@@ -5,10 +5,14 @@ from django.db.models import Count
 
 # Create your views here.
 
-def productlist(request):
+def productlist(request, category_slug=None):
+    category = None
     productlist = Product.objects.all()
-
     categorylist = Category.objects.annotate(total_products=Count('product')) # count
+
+    if category_slug:
+        category = Category.objects.get(slug=category_slug)
+        productlist = productlist.filter(category=category)
 
     paginator = Paginator(productlist, 5) # Show 5 product per page
     page = request.GET.get('page')

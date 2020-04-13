@@ -420,7 +420,7 @@
 				<ul class="all-cat-list">
 
 					{% for cl in category_list %}
-						<li><a href="mobiles.html">{{ cl }} <span class="num-of-ads">({{ cl.total_products }})</span></a></li>
+						<li><a href="{% url 'product_list_category' cl.slug %}">{{ cl }} <span class="num-of-ads">({{ cl.total_products }})</span></a></li>
 					{% endfor %}
 
 				</ul>
