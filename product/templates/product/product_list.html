@@ -61,9 +61,9 @@
 			<div class="ads-grid">
 				<div class="side-bar col-md-3">
 					<div class="search-hotel">
-					<h3 class="sear-head">Name contains</h3>
-					<form>
-						<input type="text" value="Product name..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Product name...';}" required="">
+					<h3 class="sear-head">Search</h3>
+					<form action="{% url 'product_list' %}">
+						<input type="text" value="Product name..." name="q" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Product name...';}" required="">
 						<input type="submit" value=" ">
 					</form>
 				</div>
