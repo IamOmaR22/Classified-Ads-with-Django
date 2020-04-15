@@ -1,8 +1,39 @@
-login
+{% extends 'base2.html' %}
 
-<form action="" method="post">
-  {% csrf_token %}
-  {{ form }}
+{% block body %}
+	 <section>
+			<div id="page-wrapper" class="sign-in-wrapper">
+				<div class="graphs">
+					<div class="sign-in-form">
+						<div class="sign-in-form-top">
+							<h1>Log in</h1>
+						</div>
+						<div class="signin">
+							<div class="signin-rit">
+								<span class="checkbox1">
+									 <label class="checkbox"><input type="checkbox" name="checkbox" checked="">Forgot Password ?</label>
+								</span>
+								<p><a href="#">Click Here</a> </p>
+								<div class="clearfix"> </div>
+							</div>
+							<form method="post">
+                {% csrf_token %}
 
-  <button class="btn btn-outline-primary" type="submit">Login</button>
-</form>
+                {{ form }}
+
+							<input type="submit" value="Log in">
+						</form>
+						</div>
+						<div class="new_people">
+							<h2>For New People</h2>
+							<p>Having hands on experience in creating innovative designs,I do offer design
+								solutions which harness.</p>
+							<a href="register.html">Register Now!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</section>
+
+{% endblock body %}
