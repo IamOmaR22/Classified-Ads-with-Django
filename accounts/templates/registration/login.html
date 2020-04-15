@@ -1,5 +1,7 @@
 {% extends 'base2.html' %}
 
+{% load bootstrap4 %}
+
 {% block body %}
 	 <section>
 			<div id="page-wrapper" class="sign-in-wrapper">
@@ -16,13 +18,15 @@
 								<p><a href="#">Click Here</a> </p>
 								<div class="clearfix"> </div>
 							</div>
-							<form method="post">
+
+            <form method="post" class="form">
                 {% csrf_token %}
+                {% bootstrap_form form %}
+                {% buttons %}
+                    <input type="submit" value="Log in">
+                {% endbuttons %}
+            </form>
 
-                {{ form }}
-
-							<input type="submit" value="Log in">
-						</form>
 						</div>
 						<div class="new_people">
 							<h2>For New People</h2>
