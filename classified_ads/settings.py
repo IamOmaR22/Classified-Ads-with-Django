@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'product',
     'bootstrap4',
+    'home',
 ]
 
 MIDDLEWARE = [
