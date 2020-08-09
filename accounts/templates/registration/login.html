@@ -19,20 +19,20 @@
 								<div class="clearfix"> </div>
 							</div>
 
-            <form method="post" class="form">
-                {% csrf_token %}
-                {% bootstrap_form form %}
-                {% buttons %}
-                    <input type="submit" value="Log in">
-                {% endbuttons %}
-            </form>
+	            <form method="post" class="form">
+	                {% csrf_token %}
+	                {% bootstrap_form form %}
+	                {% buttons %}
+	                    <input type="submit" value="Log in">
+	                {% endbuttons %}
+	            </form>
 
 						</div>
 						<div class="new_people">
 							<h2>For New People</h2>
 							<p>Having hands on experience in creating innovative designs,I do offer design
 								solutions which harness.</p>
-							<a href="register.html">Register Now!</a>
+							<a href="{% url 'register' %}">Register Now!</a>
 						</div>
 					</div>
 				</div>
