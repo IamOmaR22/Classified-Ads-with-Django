@@ -16,6 +16,7 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <!--fonts-->
 <link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -78,7 +79,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<div class="header-right">
         {% if user.is_authenticated %}
-          <a class="account" href="{% url 'logout' %}">Logout</a>        
+          <a class="account" href="{% url 'logout' %}">Logout</a>
+          <a class="account" href="{% url 'change-password' %}"><i class="fa fa-fw fa-key"></i><span>Change Password</span>
+    </a>
         {% else %}
           <a class="account" href="{% url 'login' %}">Login or Register</a>
         {% endif %}
