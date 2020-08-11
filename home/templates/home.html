@@ -5,14 +5,31 @@
 
 <body>
 		<!-- content-starts-here -->
+
+		<!-- Products Button Start -->
+						<div class="container">
+							<div class="col-md-4 col-md-offset-4 focus-grid">
+								<a href="{% url 'product_list' %}">
+									<div class="focus-border">
+										<div class="focus-layout">
+												<h1 class="text-danger">Click Here To See Products</h1>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+		<!-- Products Button End -->
+
 		<div class="content">
 			<div class="categories">
 				<div class="container">
+					<h1>Categories</h1>
 
 					{% for category in all_category %}
 
 					<div class="col-md-2 focus-grid">
-						<a href="categories.html">
+						<a href="{% url 'product_list_category' category.slug %}">
 							<div class="focus-border">
 								<div class="focus-layout">
 									<div class="focus-image"><i class="fa fa-mobile"></i></div>
@@ -27,6 +44,10 @@
 					<div class="clearfix"></div>
 				</div>
 			</div>
+
+
+
+
 			<div class="trending-ads">
 				<div class="container">
 				<!-- slider -->

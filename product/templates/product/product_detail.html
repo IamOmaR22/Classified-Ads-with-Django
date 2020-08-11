@@ -4,31 +4,31 @@
 
 {% block body %}
 	<!--single-page-->
-	<div class="single-page main-grid-border">
-		<div class="container">
-			<ol class="breadcrumb" style="margin-bottom: 5px;">
-				<li><a href="/">Home</a></li>
-				<li><a href="{% url 'product_list' %}">All Ads</a></li>
-				<li class="active">Mobile Phone</li>
-			</ol>
-			<div class="product-desc">
-				<div class="col-md-7 product-view">
-					<h2>{{ product_detail.name }}</h2>
-					<p> <i class="glyphicon glyphicon-map-marker"></i><a href="#">state</a>, <a href="#">city</a>| Added at {{ product_detail.created }}, Ad ID: 987654321</p>
-					<div class="flexslider">
-						<ul class="slides">
-              {% for image in product_images %}
-  							<li data-thumb="{{ image.image.url }}">
-  								<img src="{{ image.image.url }}" />
-  							</li>
-							{% endfor %}
-						</ul>
-					</div>
-					<!-- FlexSlider -->
-					  <script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
-					<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" />
+<div class="single-page main-grid-border">
+	<div class="container">
+		<ol class="breadcrumb" style="margin-bottom: 5px;">
+			<li><a href="/">Home</a></li>
+			<li><a href="{% url 'product_list' %}">All Ads</a></li>
+			<li class="active">Mobile Phone</li>
+		</ol>
+	<div class="product-desc">
+			<div class="col-md-7 product-view">
+				<h2>{{ product_detail.name }}</h2>
+				<p> <i class="glyphicon glyphicon-map-marker"></i><a href="#">state</a>, <a href="#">city</a>| Added at {{ product_detail.created }}, Ad ID: 987654321</p>
+				<div class="flexslider">
+					<ul class="slides">
+            {% for image in product_images %}
+  						<li data-thumb="{{ image.image.url }}">
+								<img src="{{ image.image.url }}" />
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<!-- FlexSlider -->
+			  <script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+				<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" />
 
-						<script>
+					<script>
 					// Can also be used with $(document).ready()
 					$(window).load(function() {
 					  $('.flexslider').flexslider({
